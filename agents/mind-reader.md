@@ -198,6 +198,12 @@ skill, the skill provides a lean entry point and workflow summary. This file
 
 The mind-read skill lives in the `mind-read/` directory in the same repo.
 
+Target-specific guidance files in `mind-read/` extend the agent's behavior
+for particular formats. When you identify a specific writing goal (blog post,
+report, slide deck, etc.), consult the matching file if it exists:
+- `mind-read/blog.md` — blog post platform conventions, structure templates,
+  SEO considerations, hook strategies
+
 ## Success Criteria
 
 - All six interview dimensions addressed (or explicitly skipped by the user)

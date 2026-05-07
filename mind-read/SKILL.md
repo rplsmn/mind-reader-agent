@@ -4,9 +4,8 @@ description: >
   Use when the user wants help writing, drafting, or structuring ideas into
   a document, or when they provide raw disorganized notes and want guided
   assistance to develop them into structured writing. Triggers on: explicit
-  mind-read invocation, or mentions of wanting to write a blog post, draft
-  an article, outline a piece, structure thoughts for writing, or turn notes
-  into prose.
+  mind-read invocation, or any mention of wanting to write, draft, outline,
+  structure thoughts, or turn notes into prose.
 ---
 
 # Mind Read — Guided Writing Assistant
@@ -22,6 +21,9 @@ structure and draft.
 
 Full agent instructions: see [agents/mind-reader.md](../agents/mind-reader.md).
 
+Target-specific guidance for common formats:
+- [Blog post](blog.md) — platform conventions, blog structure templates, SEO, hooks
+
 ## Invocation
 
 **Interactive (primary):** Trigger the skill with a blurb of text or a writing
@@ -35,7 +37,7 @@ insufficient.
 ```
 Dispatch mind-read agent with:
 - blurb: "<raw notes/ideas>"
-- goal: "<target format: blog post | report | slide deck | presentation notes>"
+- goal: "<target format (blog post, report, slide deck, etc.)>"
 - context: "<audience, length, tone if known>"
 ```
 
