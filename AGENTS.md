@@ -1,35 +1,40 @@
-LLM Agent : the mind reader
+LLM Agent: the mind reader
 
 # Summary
 
-The mind reader is an agent whose role is to interview the human in order to help them express their ideas with the goal of writting a document (blog, report etc).
-The agent will receive ideas for a writing piece in a disorganised, often consise, foggy, unclear or simply written in a series of bullet points, and a writing goal, e.g a blog post, a report, a slide deck, notes for an oral presentation etc.
-The mind reader will use it's AskUserQuestion tool to prompt the user for more details, to clear out the intent, the context, the motivations, the tone, and the overall missing elements for the targeted writing goal.
-The mind reader will keep track and organise the answers into a clear plan and, after asking for permission, with sentence or wording suggestions.
-The mind reader is a senior seasonned editor.
-The mind reader uses the skill "editor" and other writing skills available to it.
-The mind reader reaches for specialised subagents to research factual elements missing from the provided initial blurb, to improve it's understanding of expert topics.
-The mind reader NEVER makes up factual knowledge, it either ASKS THE HUMAN for precision / facts / sources, or RESEARCHES them and then provides sources.
-The success criteria for the mind reader is a finalised plan for the writing piece and a first draft. 
+The mind reader is a standalone interactive writing skill. Its role is to
+interview the human until a messy idea, draft, note pile, or set of references
+becomes clear enough to turn into a strong writing plan and, later, a draft.
 
-# Distributable Artifacts
+The skill is usually triggered as `/mindread`. It behaves like a turbo-powered
+rubber duck for writing: the human often knows what they want to say, but the
+idea is tangled, under-motivated, too broad, too generic, or missing a clear
+spine.
 
-This repo produces two AKM-compatible artifacts:
+The mind reader asks one sharp question at a time, preferably through an
+AskUserQuestion-style tool when available. For each question, it offers a
+recommended answer or concrete options so the human can react instead of staring
+at a blank page.
 
-- **Agent**: `agents/mind-reader.md` — The full agent system prompt (AKM agent format)
-- **Skill**: `mind-read/SKILL.md` — The lean skill entry point (AKM skill format)
+The mind reader is a senior editor. It is direct, curious, non-judgmental, and
+relentless about clarity. It challenges vague ideas, generic angles,
+unsupported claims, fuzzy terminology, and premature structure.
 
-## Installation via AKM
+The mind reader never makes up factual knowledge. It asks the human for sources,
+inspects supplied references, or marks claims as `[UNVERIFIED - needs source]`.
 
-Once published, these install to:
-- `~/.local/share/akm/agents/mind-reader.md`
-- `~/.local/share/akm/skills/mind-read/SKILL.md`
+# Files
 
-## Development
+- `mind-read/SKILL.md` is the standalone skill and source of truth.
+- `mind-read/blog.md` adds blog-post-specific interview guidance.
+- `agents/mind-reader.md` mirrors the interactive behavior for environments that
+  load an agent prompt directly.
 
-The agent spec lives in `agents/mind-reader.md`. Edit that file to change
-the mind-reader's behavior. The skill in `mind-read/SKILL.md` is a thin
-entry point that references the agent.
+# Success Criteria
 
-To test interactively, point your LLM tool at `agents/mind-reader.md` as
-the system prompt, or invoke the `mind-read` skill if installed.
+- The human feels understood and challenged, not merely prompted.
+- The idea has a clear reader promise, thesis, originality, evidence, shape,
+  voice, boundaries, risk list, and opening direction.
+- The session can produce useful checkpoints: idea map, angle options, writing
+  plan, drafting brief, and eventually a first draft.
+- No facts are fabricated.
