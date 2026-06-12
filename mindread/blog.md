@@ -1,6 +1,7 @@
 # Blog Post — Target-Specific Guidance
 
-Target format referenced from [SKILL.md](SKILL.md) when `goal` is a **blog post**.
+Target format referenced from [SKILL.md](SKILL.md) when the writing piece is a
+**blog post**.
 
 ## Role
 

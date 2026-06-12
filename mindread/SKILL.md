@@ -1,14 +1,18 @@
 ---
 name: mind-read
-description: Relentless interactive writing interview for turning a messy idea, raw notes, draft, references, or source material into a mature writing piece. Use when the user invokes /mindread, asks to untangle thoughts for writing, wants help developing a blog post/article/essay/report/talk, or provides scattered notes and needs structure, themes, angle, outline, or drafting readiness.
+description: Relentless interactive writing interview for turning a messy idea, raw notes, draft, references, or source material into a mature writing piece and anti-blank-page artifacts. Use when the user invokes /mindread, asks to untangle thoughts for writing, wants help developing a blog post/article/essay/report/talk, or provides scattered notes and needs structure, themes, angle, outline, or drafting readiness.
 ---
 
 # Mind Read
 
 Interview the human relentlessly until their writing idea has a spine, a point of
-view, enough supporting material, and a usable structure. This is the writing
-counterpart of grilling a product/design plan: walk the idea tree one decision at
-a time, make the human think, and do not settle for shallow clarity.
+view, enough supporting material, and a usable structure. Turn the conversation
+into concrete anti-blank-page artifacts: maps, angle options, plans, drafting
+briefs, and drafts when appropriate.
+
+This is the writing counterpart of grilling a product/design plan: walk the idea
+tree one decision at a time, make the human think, capture what crystallizes,
+and do not settle for shallow clarity.
 
 <what-to-do>
 
@@ -35,11 +39,11 @@ material, inspect that material instead of asking. Never invent facts.
 2. **Reflect back** the strongest inferred topic, tension, and likely writing goal.
 3. **Ask one sharp question** that resolves the highest-leverage uncertainty.
 4. **Recommend an answer** or offer concrete options before asking for their take.
-5. **Capture the decision** in a running mental outline: thesis, audience, themes,
-   examples, constraints, unresolved claims.
+5. **Capture the decision** in the conversation and, when useful, in a working
+   artifact: thesis, audience, themes, examples, constraints, unresolved claims.
 6. **Repeat** until the piece has a clear angle, reader, shape, and evidence.
-7. **Produce deliverables** only when the human asks or the interview reaches a
-   natural checkpoint.
+7. **Write checkpoint artifacts** at natural milestones so the human never has to
+   face a blank page.
 
 ## What To Probe
 
@@ -83,7 +87,8 @@ Do not mechanically ask every item. Use these as pressure points.
 
 ## Deliverables
 
-Offer these as lightweight checkpoints. Do not rush to drafting.
+Create these as lightweight checkpoints when the conversation reaches them. Do
+not wait for perfect certainty, and do not rush to a polished draft.
 
 - **Idea map:** themes, tensions, examples, open questions, and cut-list.
 - **Angle options:** 2-4 possible theses with trade-offs and your recommendation.
@@ -94,9 +99,34 @@ Offer these as lightweight checkpoints. Do not rush to drafting.
 - **First draft:** only after the human approves the plan or explicitly asks to
   draft now.
 
-When producing a plan or draft, save it in the current working directory using a
-clear dated filename such as `YYYY-MM-DD-topic-slug-plan.md` or
-`YYYY-MM-DD-topic-slug-draft.md`.
+Treat artifacts like the writing equivalent of CONTEXT/ADR updates: they are how
+the session preserves clarity. When a meaningful cluster of decisions emerges,
+write or update the relevant artifact instead of leaving it only in chat.
+
+Use clear dated filenames in the current working directory:
+
+- `YYYY-MM-DD-topic-slug-idea-map.md`
+- `YYYY-MM-DD-topic-slug-angle-options.md`
+- `YYYY-MM-DD-topic-slug-plan.md`
+- `YYYY-MM-DD-topic-slug-drafting-brief.md`
+- `YYYY-MM-DD-topic-slug-draft.md`
+
+Each artifact should be useful on its own after the session. Include unresolved
+questions and `[UNVERIFIED - needs source]` claims rather than smoothing them
+over.
+
+## Artifact Timing
+
+- After the first few answers, offer or write an **idea map** if the material is
+  messy enough that structure would reduce anxiety.
+- When several plausible directions exist, write **angle options** and ask the
+  human to choose or rank them.
+- Once the reader promise, thesis, shape, and evidence are coherent, write a
+  **writing plan** and ask for approval before drafting.
+- When the plan is approved but the human still feels blocked, write a
+  **drafting brief** with the next smallest section to draft.
+- Write a **first draft** only after plan approval or an explicit request to draft
+  now.
 
 ## Style
 
